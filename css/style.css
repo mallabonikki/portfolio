@@ -63,7 +63,7 @@ section {
 .tagline {
     background: #03899f;
     color: #fff;
-    min-height: 400px;
+    min-height: 250;
 }
 
 .tagline h1 {
