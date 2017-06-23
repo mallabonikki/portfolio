@@ -104,7 +104,8 @@ footer {
 
 .overlay {
     display: none;
-    background: #03899f url(../img/overlay.png) no-repeat top center;
+    background: #03899f url(../images/overlay.png) no-repeat top center;
+    background-size: 100% 100%;
     color: #fff;
     position: absolute;
     top: 0;
@@ -123,3 +124,31 @@ footer {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    .logo, nav {
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul, nav li {
+        float: none;
+        padding: 0
+    }
+
+    na li {
+        margin-bottom: 15px;
+    }
+
+    #gallery li {
+        width: 48%;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 568px) {
+    #gallery li {
+        width: 100%;
+        margin-right: 0;
+    }
+}

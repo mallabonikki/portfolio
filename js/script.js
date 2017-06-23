@@ -1,5 +1,19 @@
 $(document).ready(function () {
     console.log("document ready");
+    //$('.tagline .container h1').load("aboutme.txt");
+    //$('.tagline .container h1').html(txtAsp);
+    $('.logo a').click(function () {
+        console.log('click logo')
+        $.post("demo_test.asp",
+        {
+            name: "Donald Duck",
+            city: "Duckburg"
+        },
+        function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    }); 
+
     $('nav a').on('click', function () {
         // Current class assignment
         $('nav li.current').removeClass('current');
