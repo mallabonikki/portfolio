@@ -1,18 +1,13 @@
 $(document).ready(function () {
     console.log("document ready");
-    //$('.tagline .container h1').load("aboutme.txt");
+    $('.tagline .container h1').load("aboutme.txt");
     //$('.tagline .container h1').html(txtAsp);
-    $('.logo a').click(function () {
-        console.log('click logo')
-        $.post("demo_test.asp",
-        {
-            name: "Donald Duck",
-            city: "Duckburg"
-        },
-        function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
-        });
-    }); 
+    //$('.container .logo:nth-child(2)').click(function () {
+        //console.log("click logo 2");
+        //$(this).append('<iframe src="https://profiles.generalassemb.ly/profiles/mallabonikki"></iframe>');
+        //$('.container:eq(2) *').detach();
+        //$('.container:eq(2)').append('<iframe src="https://profiles.generalassemb.ly/profiles/mallabonikki"></iframe>');
+    //});
 
     $('nav a').on('click', function () {
         // Current class assignment
@@ -64,7 +59,7 @@ $(document).ready(function () {
 
         //add html to overlay
         overlay.html('<h3>'+title+'</h3><p>'+desc+'</p>');
-
+        
         overlay.fadeIn(800);
     });
 
@@ -78,5 +73,6 @@ $(document).ready(function () {
 
         //fade out overlay
         overlay.fadeOut(500);
+        overlay.detach();
     });
 });

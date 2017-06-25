@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+.tagline .container {
+    min-height: 200px;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -26,17 +30,31 @@ header {
 
 .logo {
     float: left;
-    width: 30%;
-    margin-top: 15px;
+    /*width: 30%;*/
+    margin-top: 5px;
+}
+
+.logo img {
+    height: 50px;
+    border: 0;
+    padding: 0 1em 0 0;
 }
 
 nav {
     float: right;
-    width: 70%;
+    width: 50%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
+
 
 ul {
     float: right;
+}
+
+nav ul {
+    padding-left: 0;
 }
 
 nav li {
@@ -69,6 +87,7 @@ section {
 .tagline h1 {
     text-align: center;
     font-size: 35px;
+    line-height: 100%;
 }
 
 #gallery {
@@ -81,7 +100,7 @@ section {
 #gallery li {
     display: block;
     float: left;
-    width: 23%;
+    width: 40%;
     cursor: pointer;
     border-radius: 5px;
     box-sizing: border-box;
@@ -100,13 +119,17 @@ footer {
     color: #fff;
     text-align: center;
     padding-top: 10px;
+    /*position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;*/
 }
 
 .overlay {
     display: none;
     background: #03899f url(../images/overlay.png) no-repeat top center;
     background-size: 100% 100%;
-    color: #fff;
+    color: #000;
     position: absolute;
     top: 0;
     left: 0;
@@ -117,18 +140,31 @@ footer {
     border-radius: 5px;
     box-sizing: border-box;
     pointer-events: none;
+    opacity: 0.8;
 }
 
-.overlay h3 {
+.overlay h3, p {
     margin: 0;
     padding: 0;
+    opacity: 1;
+    color: #000fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .logo, nav {
         float:none;
         width: 100%;
         text-align: center;
+    }
+
+    .logo img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+    header .container {
+        padding-top: 5px;
     }
 
     nav ul, nav li {
