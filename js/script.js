@@ -39,8 +39,8 @@ $(document).ready(function () {
     $('ul#gallery li').mouseenter(function () {
         console.log('mouse enter event');
         //Get the data attribute values
-        var title = $(this).children().data('title');
-        var desc = $(this).children().data('desc');
+        var title = $(this).children(':nth-child(2)').data('title');
+        var desc = $(this).children(':nth-child(2)').data('desc');
          
         //validation
         if (desc == null) {
