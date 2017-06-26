@@ -168,7 +168,7 @@ footer {
     padding-right: 5px!important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .logo, nav {
         float:none;
         width: 100%;
@@ -199,9 +199,9 @@ footer {
     }
 }
 
-@media (max-width: 568px) {
-    #gallery li {
-        /*width: 100%;*/
-        /*margin-right: 0;*/
+@media (max-width: 320px) {
+    .container {
+       box-sizing: border-box;
+       margin: 0!important;
     }
 }
