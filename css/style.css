@@ -13,7 +13,12 @@ a {
 }
 
 .tagline .container {
-    min-height: 200px;
+    min-height: 250px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -81,7 +86,7 @@ section {
 .tagline {
     background: #03899f;
     color: #fff;
-    min-height: 250;
+    min-height: 250px;
 }
 
 .tagline h1 {
@@ -187,15 +192,28 @@ footer {
 
     nav ul, nav li {
         float: none;
-        padding: 0
+        padding: 0;
+        margin: 0;
     }
 
     nav li {
         margin-bottom: 15px;
     }
 
-    #gallery li {
-        /*margin-right: 8px;*/
+    #gallery ul {
+        margin: 0;
+        /*width: 90%;*/
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #gallery li img {
+        width: 90%;
+        height: auto;
     }
 }
 
